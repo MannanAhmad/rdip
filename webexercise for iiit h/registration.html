@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="Head">Registration Page:</h1>
+        <a href="https://serc.iiit.ac.in/rdip/" target="__blank">
+            <h1 id="RDIP_logo" title="Remote Digital Internship Program">RDIP</h1>
+        </a>
+        <a href="https://www.iiit.ac.in/" target="__blank"><img id="IIITH_logo"
+                src="https://www.iiit.ac.in/img/iiit-new.png" title="IIIT Hyderabad" alt="IIITH logo"></a>
+    </header>
+    <nav>
+        <ul>
+            <a href="homepage.html">
+                <li>Home</li>
+            </a>
+            <a href="registration.html">
+                <li>Registration Form</li>
+            </a>
+            <div style="clear:both;"></div>
+        </ul>
+    </nav>
+    <main>
+        <form action="/details.html"  method="get">
+            
+            <table>
+                <tr>
+                    <td><label for="name">First name:</label></td>
+                    <td><input type="text" id="name" name="first_name" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" id="email" name="E-mail" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone No:</label></td>
+                    <td><input type="number" id="phone" name="Phone_No" required/></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" name="gender" value="male" required/>Male <input type="radio"
+                            name="gender" value="female" required/>Female <input type="radio" name="gender" value="other" required/>Other</td>
+                </tr>
+                <tr>
+                    <td><label>Reason for RDIP:</label></td>
+                    <td> <input type="checkbox" name="Reason for RDIP" value="html" />HTML <input type="checkbox" name="Reason for RDIP"
+                            value="css" />CSS
+                        <input type="checkbox" name="Reason for RDIP" value="javascript" />JavaScript</td>
+                </tr>
+                <tr>
+                    <td><label for="clg">College:</label></td>
+                    <td><input type="text" id="clg" name="College" required/></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="declaration" value="varified by user" required></td>
+                    <td>I declare above details given by me are true.</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit" name="submit-form" />
+                    </td>
+                    <td><input type="reset" value = "Reset"></td>
+                </tr>
+
+            </table>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    padding: 0px 17px;
+    
+}
+
+header #RDIP_logo {
+    float: right;
+    margin-right: 38px;
+    margin-top: 12px;
+}
+header #Head{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#IIITH_logo {
+    width: 200px;
+    height: 70px;
+}
+
+nav {
+    /* border: 1px solid black; */
+    margin-top: 25px;
+    background-color: #0a0b13f5;
+    margin-bottom: 48px
+}
+
+nav ul {
+    list-style: none;
+    /* float: left; */
+}
+
+nav ul li {
+    float: left;
+    width: 150px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+nav ul a li:hover {
+    background: rgb(209, 168, 92);
+    color: rgb(7, 10, 7);
+    transition: 0.6s ease;
+    font-weight: bold;
+}
+nav ul a{
+    color: #ffff;
+}
+table{
+    padding:7px 8px;
+    width: 500px;
+    margin: 30px;
+}
