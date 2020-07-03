@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+
+}
+
+.textbox{
+    width: 300px;
+    height: 40px;
+    margin: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+}
+.lbl{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: rgb(17, 7, 9);
+    text-shadow: 8px 6px 6px  rgb(236, 225, 225);
+    
+}
+#first{
+    margin-right: 25px;
+}
+#op{
+    margin-right: 53px;
+}
+.qus{
+    margin-left: 130px;
+    font-size: 19px;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: rgb(17, 7, 9);
+    text-shadow: 8px 6px 6px  rgb(236, 225, 225);
+}
+
+.btn{
+    width: 105px;
+    height: 40px;
+    padding: 2px 4px;
+    margin-left: 22px;
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-radius: 39px;
+}
+
+main{
+    width: 700px;
+    height: 300px;
+    transform: translate(60%,55%);
+    
+}
+#form{
+    margin: 30px 90px;
+    
+}
+h1{
+    text-align: center;
+    color: rgb(210, 243, 243);
+    text-shadow: 8px 6px 6px  rgb(22, 2, 2),8px 6px 6px  rgb(224, 11, 11);
+}
+#ansr{
+    margin-left: 76px;
+}
+body{
+background: linear-gradient(to right,#e91e63,#3f51);
+}

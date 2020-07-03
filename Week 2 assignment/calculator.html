@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Created By Mannan</title>
+    <script src="allJavaScript.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+    <main>
+        <h1>Mannan's Calculator Using DHTML.</h1>
+        <form  name="myForm" id="form">
+
+                <label class="lbl" id="first">First Number:</label>
+                <input type="text" id="firstnum"  class="textbox" placeholder="0.0"><br>
+
+                <label class="qus">Do you want to find absolute value:</label>
+                 Yes: <input type="radio" id="absyes" name="condition" onclick="hide();">
+                 No: <input type="radio" id="absno" name="condition" onclick="show();">
+                <br>
+                <label class="qus">Do you want to find Square Root:</label>
+                 Yes: <input type="radio" id="sqrtyes" name="condition1" onclick="hide();">
+                <br>
+                <label class="lbl">Second Number:</label>
+                <input type="text" id="secondnum" class="textbox" placeholder="0.0"><br>
+
+                <label class="lbl" id="ansr">Answer:</label>
+                <input type="text" id="ans" class="textbox"><br>
+                
+                <input type="button" class="btn" id="b1" value="Addition" onclick="Addition();">
+                <input type="button" class="btn" id="b2" value="Substraction" onclick="Substraction();">
+                <input type="button" class="btn" id="b3" value="Multiplication" onclick="Multiplication();">
+                <input type="button" class="btn" id="b4" value="Division" onclick="Division();">
+                <input type="button" class="btn" id="b5" value="Percentage" onclick="Percentage();">
+                <input type="button" class="btn" id="b6" value="Abs Value" onclick="Absolute();">
+                <input type="button" class="btn" id="b7" value="Square Root" onclick="SquareRoot();">
+                <input type="button" class="btn" id="b8" value="Clear" onclick="Clear();">
+            </form>
+            
+        </main>
+    
+</body>
+</html>
