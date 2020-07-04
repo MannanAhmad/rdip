@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic form </title>
+    <link rel="stylesheet" href="ValidateForm.css">
+    <script src="allJavaScript.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Complete Form By Mannan With Validation.</h1>
+        <form onsubmit="return validation();">
+            <div id="top">
+                <h3>Sign Up</h3>
+                <p>It's free and always will be.</p>
+            </div>
+            <table>
+                <tr>
+                    <td><input type="text" name="name" id="user" placeholder="Name">  
+                    <td><span id="name-error" class="error"></span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="mobileNo" id="mob" placeholder="Mobile number "></td>
+                    <td><span id="mob-error" class="error"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="email" id="mail" placeholder="E-mail"></td>
+                    <td><span id="mail-error" class="error"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="pass" id="npass" placeholder="New password"></td>
+                    <td><span id="pass-error" class="error"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="cnf-pass" id="cnfpass" placeholder="Confirm password"></td>
+                    <td><span id="cnfpass-error" class="error"></span></td>
+                </tr>
+            </table>
+           
+            <p id="secpara">By clicking Sign Up. you agree our <a href="#">Terms</a> and that you have read our <a href="#">Data
+                    Policy</a>. including our <a href="#">Cookie Use</a>.</p>
+            <table class="tb">
+                <tr>
+                    <td><input type="submit" value="Sign Up"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

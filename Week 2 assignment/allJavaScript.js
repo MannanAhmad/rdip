@@ -1,6 +1,5 @@
-//  ****   JS FUNCTION FOR CALCULATOR.HTML WEBPAGE  ****  //
 
-// document.getElementById("ans").value = firstNum +secondNum;
+//  ****   JS FUNCTION FOR CALCULATOR.HTML WEBPAGE  ****  // (TASK-1)
 
 
 var num1,num2,result;
@@ -130,3 +129,60 @@ function Clear(){
     document.getElementById("ans").value = ""
 }
 
+
+
+//  ****   JS FUNCTION FOR ValidateForm.HTML WEBPAGE  ****  // (TASK-2)
+
+
+function validation(){
+        var userName = document.getElementById("user").value;
+        var userMobile = document.getElementById("mob").value;
+        var userEmail = document.getElementById("mail").value;
+        var userPass = document.getElementById("npass").value;
+        var userCnfPass = document.getElementById("cnfpass").value;
+        
+        // Regx expression for all fields
+
+        var checkUserName = /^[A-Za-z. ]{3,25}$/;
+        var checkUserPassword = /^(?=.*[0-9])(?=.*[!@#%$^&*])[A-Za-z0-9!@#%$^&*]{8,15}$/;
+        var checkUserMobile = /^[6789]{1}[0-9]{9}$/
+        var checkUserEmail = /^[A-Za-z_0-9]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z.]{2,6}$/;
+
+        // check all expression
+
+        if(checkUserName.test(userName)){
+            document.getElementById("name-error").innerHTML = " ";
+        }else{
+            document.getElementById("name-error").innerHTML = "*** Invalid UserName it must be only Charectors, lenght should be atleast 3";
+            return false;
+        }
+
+        if(checkUserMobile.test(userMobile)){
+            document.getElementById("mob-error").innerHTML = " ";
+        }else{
+            document.getElementById("mob-error").innerHTML = "*** Invalid Mobile Number it only contains number lenght must be 10, First digit must be starting from (6-9)";
+            return false;
+        }
+
+        if(checkUserEmail.test(userEmail)){
+            document.getElementById("mail-error").innerHTML = " ";
+        }else{
+            document.getElementById("mail-error").innerHTML = "*** Invalid E-mail ";
+            return false;
+        }
+
+        if(checkUserPassword.test(userPass)){
+            document.getElementById("pass-error").innerHTML = " ";
+        }else{
+            document.getElementById("pass-error").innerHTML = "*** Invalid Password must contains one number and one special charector and lenght should be atleast 8";
+            return false;
+        }
+
+        if(userCnfPass.match(userPass)){
+            document.getElementById("cnfpass-error").innerHTML = " ";
+        }else{
+            document.getElementById("cnfpass-error").innerHTML = "*** Password not matched";
+            return false;
+        }
+
+        }

@@ -1,0 +1,99 @@
+#container {
+
+    width: 650px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 50px;
+    padding-left: 80px;
+    background-color: rgba(197, 214, 214, 0.308);
+    border: 1px solid black;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-shadow: 4px 5px 4px red;
+    text-transform: uppercase; 
+}
+.error{
+    color: red;
+    font-weight: bold;
+}
+
+#top {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#top h3 {
+    font-size: 30px;
+    line-height: 0px;
+}
+
+#top p {
+    line-height: 1px;
+    font-size: 14px;
+}
+
+#bd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1px;
+}
+
+#bdt {
+    line-height: 1px;
+}
+
+.tb tr td {
+    border-color: red;
+}
+
+input[type="text"]{
+    border:1px solid red;
+    /* border-radius: 8px; */
+    margin:2px;
+    padding:13px;
+    width: 372px;
+}
+
+input[type="text"]:hover{
+    border:1px solid rgb(109, 109, 223);
+    border-radius: 8px;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 372px;
+    border: 1px solid red;
+    /* border-radius: 8px; */
+    /* outline:none; */
+    margin:2px;
+    padding:13px;
+}
+
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover{
+    border:1px solid rgb(109, 109, 223);
+    border-radius: 8px;
+
+}
+input[type="submit"]{
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(39, 32, 32);
+}
+#para{
+    font-size: 12px;
+}
+#para a{
+    font-size: 12px;
+    text-decoration: none;
+}
+#secpara a{
+    font-size: 12px;
+    text-decoration: none;
+}
