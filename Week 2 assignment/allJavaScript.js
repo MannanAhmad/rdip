@@ -78,6 +78,7 @@ function hide() {
     document.getElementById("b4").disabled = true;
     document.getElementById("b5").disabled = true;
     document.getElementById("b8").disabled = true;
+    return document.getElementById('secondnum').disabled = true;
 
 
 }
@@ -89,6 +90,7 @@ function show() {
     document.getElementById("b4").disabled = false;
     document.getElementById("b5").disabled = false;
     document.getElementById("b8").disabled = false;
+    return document.getElementById('secondnum').disabled = false;
 }
 function Absolute() {
     num1 = parseFloat(document.getElementById("firstnum").value)
@@ -122,6 +124,7 @@ function Clear() {
     document.getElementById("firstnum").value = ""
     document.getElementById("secondnum").value = ""
     document.getElementById("ans").value = ""
+    return document.getElementById("firstnum").value = ""
 }
 
 
@@ -232,3 +235,7 @@ function isAnagram() {
         alert("Please enter valid string, Space is not allowed")
     }
 }
+
+
+
+//  ****   JS FUNCTION FOR WHO WILL SURVIVE GAME FOR WHOWILLSURVIVE.HTML WEBPAGE  ****  // (TASK-4)
