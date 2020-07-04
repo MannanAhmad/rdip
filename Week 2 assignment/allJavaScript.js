@@ -183,7 +183,7 @@ function validation() {
 }
 
 
-//  ****   JS FUNCTION To CHECK PALINDROME FOR ISPALINDROME.HTML WEBPAGE  ****  // (TASK-3)
+//  ****   JS FUNCTION To CHECK PALINDROME FOR ISPALINDROME.HTML WEBPAGE  ****  // (TASK-3)(PART-1)
 
 function isPalindrome() {
     var userValue = document.getElementById("Input").value;
@@ -199,10 +199,36 @@ function isPalindrome() {
             return true;
         }
         else {
-             alert("String is not palindrome") 
-             return false
-            }
+            alert("String is not palindrome")
+            return false
+        }
     } else {
         alert("Please enter valid string")
+    }
+}
+
+
+//  ****   JS FUNCTION To CHECK Anagram FOR ISANAGRAM.HTML WEBPAGE  ****  // (TASK-3)(PART-2)
+
+function isAnagram() {
+    var firstVal = document.getElementById("first").value;
+    var secondVal = document.getElementById("second").value;
+
+    // regulare expression for userInput field
+    var userCheck = /^[A-Za-z]{3,}$/;
+
+    if (userCheck.test(firstVal) && userCheck.test(secondVal)) {
+        let check1 = firstVal.split("").sort().join("").toUpperCase();
+        let check2 = secondVal.split("").sort().join("").toUpperCase();
+        if(check1 === check2){
+            alert("Both Are Anagram.")
+            return true;
+        }
+        else{
+            alert("Both Are Not Anagram.")
+            return false;
+        }
+    } else {
+        alert("Please enter valid string, Space is not allowed")
     }
 }
