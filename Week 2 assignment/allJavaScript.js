@@ -239,3 +239,99 @@ function isAnagram() {
 
 
 //  ****   JS FUNCTION FOR WHO WILL SURVIVE GAME FOR WHOWILLSURVIVE.HTML WEBPAGE  ****  // (TASK-4)
+
+function playGame(){
+    var num1 = document.getElementById("choice1").value;
+    var num2 = document.getElementById("choice2").value;
+    var randomNumGenrator1 = Math.floor(Math.random()*(0,1000));
+    var randomNumGenrator2 = Math.floor(Math.random()*(0,1000));
+   
+    //Genrating random number for both textfields
+
+    num1 = randomNumGenrator1;
+    num2 = randomNumGenrator2;
+
+    //Mapping Logic
+
+    var firstChoice = (num1 % 3);
+    var secondChoice = (num2 % 3);
+
+    document.getElementById("choice1").value = firstChoice
+    document.getElementById("choice2").value = secondChoice
+   
+    //Logic for textField 1
+
+    if( firstChoice === 0){
+        var msg1 = document.getElementById("f1");
+        msg1.innerHTML = "Human is selected"
+    }else if (firstChoice === 1){
+        var msg1 = document.getElementById("f1");
+        msg1.innerHTML = "Cockroach is selected"
+    }else{
+        var msg1 = document.getElementById("f1");
+        msg1.innerHTML = "Nuclear Bomb is selected"
+    }
+    
+    //Logic for textField 2
+
+    if( secondChoice === 0){
+        var msg1 = document.getElementById("f2");
+        msg1.innerHTML = "Human is selected"
+    }else if (secondChoice === 1){
+        var msg1 = document.getElementById("f2");
+        msg1.innerHTML = "Cockroach is selected"
+    }else{
+        var msg1 = document.getElementById("f2");
+        msg1.innerHTML = "Nuclear Bomb is selected"
+    }
+
+    //Result Logic
+
+    if(firstChoice==0 && secondChoice==0){
+        var res = document.getElementById("result")
+        res.value = "TIE";
+        return res.value;
+    }
+    else if(firstChoice==0 && secondChoice==1){
+        var res = document.getElementById("result");
+        res.value = "Human Killed Cockroach";
+        return res.value;
+    }
+    else if(firstChoice==0 && secondChoice==2){
+        var res = document.getElementById("result");
+        res.value = "Nuclear Bomb killed Human";
+        return res.value;
+    }
+    else if(firstChoice==1 && secondChoice==0){
+        var res = document.getElementById("result");
+        res.value = "Human killed cockroach ";
+        return res.value;
+    }
+    else if(firstChoice==1 && secondChoice==1){
+        var res = document.getElementById("result");
+        res.value = "TIE";
+        return res.value;
+    }
+    else if(firstChoice==1 && secondChoice==2){
+        var res = document.getElementById("result");
+        res.value = "Nuclear Bomb Killed Cockroach";
+        return res.value;
+    }
+    else if(firstChoice==2 && secondChoice==0){
+        var res = document.getElementById("result");
+        res.value = "Nuclear Bomb Killed Human";
+        return res.value;
+    }
+    else if(firstChoice==2 && secondChoice==1){
+        var res = document.getElementById("result");
+        res.value = "Nuclear Bomb Killed Cockroach";
+        return res.value;
+    }
+    else {
+        var res = document.getElementById("result");
+        res.value = "TIE";
+        return res.value;
+    }
+
+    
+}
